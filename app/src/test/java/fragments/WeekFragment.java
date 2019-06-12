@@ -1,19 +1,25 @@
 package fragments;
 
-import com.safaricom.androidhackathon.utils.Global;
-
+import com.safaricom.androidhackathon.R;
+import com.safaricom.util.Global;
 import org.junit.Test;
+import static com.google.common.truth.Truth.assertThat;
 
-import java.util.ArrayList;
-import java.util.List;
+public class WeekFragment {
 
-import static org.hamcrest.MatcherAssert.assertThat;
-
-public class WeekFragmentTest {
+    /**
+     * Performs Unit Test On method isInteger return true if argument is integer
+     * {@link WeekFragment#isInteger_CorrectIntegerString_ReturnsTrue()}.
+     */
     @Test
-    public void emailValidator_CorrectEmailSimple_ReturnsTrue() {
+    public void isInteger_CorrectIntegerString_ReturnsTrue() {
+        assertThat(Global.isInteger("5")).isTrue();
 
-        List<Integer> ints =  new ArrayList<>();
-
+        /**
+        *  Uncomment for failure tests
+        *  assertThat(Global.isInteger("f")).isTrue();
+         *
+         */
     }
+
 }

@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.WeekFragment">
+    tools:context="com.safaricom.fragment.WeekFragment">
 
     <TextView
         android:layout_width="match_parent"
@@ -33,6 +33,7 @@
             android:textColor="@color/colorAccent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLength="8"
             android:inputType="number"
             android:hint="@string/starting_amount" />
 
